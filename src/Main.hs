@@ -54,6 +54,7 @@ helpText = T.unlines
 imageExtensions :: [String]
 imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".tiff", ".svg"]
 
+-- TODO Buggy when renaming overwrites an existing file with the same name
 main :: IO ()
 main = do
   args <- getArgs
